@@ -14,7 +14,7 @@ pipeline {
                     ls -la
                     node --version
                     npm --version 
-                    chown -R 501:20 "~/.npm"
+                    chown -R 501:20 "/usr/local/share/npm".
                     npm ci
                     npm run build
                     ls -la
