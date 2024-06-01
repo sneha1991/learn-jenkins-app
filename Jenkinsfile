@@ -14,7 +14,7 @@ pipeline {
                     ls -la
                     node --version
                     npm --version 
-                    id -u
+                     chown -R 501:20
                     npm ci
                     npm run build
                     ls -la
