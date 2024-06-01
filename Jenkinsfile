@@ -13,8 +13,7 @@ pipeline {
                 sh '''
                     ls -la
                     node --version
-                    npm --version
-                    sudo chown -R 501:20 "/.npm" 
+                    npm --version 
                     npm ci
                     npm run build
                     ls -la
